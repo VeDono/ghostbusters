@@ -1,10 +1,16 @@
 $(document).ready(function(){
    const mMenuBtn = $('.m-menu-button');
    const mMenu = $('.m-menu');
-   const tab = $(".tab")
+   const tab = $(".tab");
+   const nav = $(".navigation");
+   const search = $(".search-input");
+   const btnGroup = $(".button-group");
    mMenuBtn.on('click', function () {
     mMenu.toggleClass('active');
     $('body').toggleClass('no-scroll');
+    nav.toggleClass("active");
+    search.toggleClass("active");
+    btnGroup.toggleClass("active");
    });
 
    tab.on("click", function() {

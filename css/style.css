@@ -375,12 +375,15 @@ body {
         margin-left: 20px; } }
   @media (max-width: 768px) {
     .header .m-menu.active {
-      display: flex; } }
+      display: flex;
+      height: 100%;
+      padding: 130px; } }
   .header .m-menu {
     display: flex;
     height: 100%;
     align-items: center;
-    flex-grow: 1; }
+    flex-grow: 1;
+    transition: 0.2s ease-out; }
     @media (max-width: 768px) {
       .header .m-menu {
         position: fixed;
@@ -389,11 +392,13 @@ body {
         right: 0;
         bottom: 0;
         background: #5671F6;
-        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        padding: 130px; } }
+        height: 0; } }
+    .header .m-menu .search-input.active {
+      display: flex;
+      margin-top: 0; }
     .header .m-menu .search-input {
       background-image: url(../src/img/search-icon.svg);
       background-repeat: no-repeat;
@@ -421,7 +426,11 @@ body {
           height: 50px;
           border-radius: 5px;
           border: none;
-          background-image: none; } }
+          background-image: none;
+          display: none;
+          margin-top: 250px; } }
+    .header .m-menu .navigation.active {
+      display: flex; }
     .header .m-menu .navigation {
       margin-right: 44px;
       margin-left: auto; }
@@ -433,7 +442,7 @@ body {
           display: none; } }
       @media (max-width: 768px) {
         .header .m-menu .navigation {
-          display: flex;
+          display: none;
           flex-direction: column;
           justify-content: center;
           align-items: center;
@@ -482,7 +491,7 @@ body {
       display: none; }
       @media (max-width: 768px) {
         .header .m-menu .m-menu-line {
-          display: flex;
+          display: none;
           height: 1px;
           width: 50%;
           background: #fff;
@@ -491,13 +500,16 @@ body {
       @media (max-width: 576px) {
         .header .m-menu .m-menu-line {
           display: none; } }
+    .header .m-menu .button-group.active {
+      display: flex; }
     .header .m-menu .button-group {
       display: flex;
       height: 100%; }
       @media (max-width: 768px) {
         .header .m-menu .button-group {
           height: auto;
-          flex-direction: column; } }
+          flex-direction: column;
+          display: none; } }
       .header .m-menu .button-group .button {
         height: 100%;
         cursor: pointer; }
