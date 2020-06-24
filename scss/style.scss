@@ -1163,6 +1163,7 @@ body {
 				z-index: 99;
 				cursor: pointer;
 				display: none;
+				outline: none;
 
 				@media (max-width: 768px) {
 					display: block;

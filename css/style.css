@@ -980,7 +980,8 @@ body {
     transform: translateY(-50%);
     z-index: 99;
     cursor: pointer;
-    display: none; }
+    display: none;
+    outline: none; }
     @media (max-width: 768px) {
       .news .container .swiper-container .button-next {
         display: block; } }
