@@ -986,7 +986,14 @@ body {
     cursor: pointer;
     display: none;
     outline: none;
-    transition: 0.3s; }
+    transition: 0.3s;
+    height: 30px;
+    width: 25px;
+    background-image: url(../src/img/arrow.svg);
+    background-repeat: no-repeat; }
+    .news .container .swiper-container .button-next:active, .news .container .swiper-container .button-next:focus {
+      background-image: url(../src/img/arrow-active.svg);
+      background-repeat: no-repeat; }
     @media (max-width: 768px) {
       .news .container .swiper-container .button-next {
         display: block; } }
